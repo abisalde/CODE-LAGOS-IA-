@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CODE LAGOS | Gateway to seemless programming language</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+		<nav class="navbar navbar-default">
+				<div class="container">
+				  <!-- Brand and toggle get grouped for better mobile display -->
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					  <span class="sr-only">Navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" id="hd"><b>&lt; / &gt;</b> CODE-LAGOS</a>
+				  </div>
+			  
+				  <!-- The nav links -->
+				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					  <li id="hd"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					  <li><a href="#about">About</a></li>
+					  <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programming <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Embeded Systems</a></li>
+						  <li><a href="#">Desktop Applications</a></li>
+						  <li><a href="#">Web Applications</a></li>
+						  <li><a href="#">Mobile Applications</a></li>
+						  <li><a href="#">Console Applications</a></li>
+						  <li role="separator" class="divider"></li>
+						  <li><a href="lang.html" target="_blank">Languages</a></li>
+						</ul>
+						</li>
+					<li id="hd"><a href="blog.html" target="_blank">News/Blog</a></li>
+					<li id="hd"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+						<a href="login.html"><button type="button" class="btn btn-sm" id="hd">LOGIN</button></a>
+						<a href="login.html"></a><button type="button" class="btn btn-sm" id="hd">SIGN UP</button></a>
+					  </li>
+					</ul>
+            </div><!-- /.navbar-collapse -->
+		</div><!-- .Container -->
+      </nav>
+    <!-- Form to login into the server start from here -->
+        <div class="container">
+            <div class="heading">
+                <h1 id="hd">LOGIN</h1>
+            </div>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+        </div> <!-- Login form stops here -->
+
+        <hr>
+
+        <div class="container">
+            <div class="formcontainer">
+            <div class="heading">
+                <h1 id="hd">SIGN UP</h1>
+            </div>
+                <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                        </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="validationCustom03" placeholder="city" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationemail">E-mail</label>
+                            <input type="email" class="form-control" id="validationCustomemail" placeholder="email address" required>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="validationCustom05">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <button class="btn" type="submit">Submit form</button>
+                      </form>
+            </div>                      
+        </div>
+
+      <div id="footer">
+          <footer>Isaiah Abiodun &lt;CODE&nbsp;LAGOS&gt; &copy; Copyright</footer>
+      </div> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+                // JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+    </body>
+</html>
